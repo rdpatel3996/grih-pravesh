@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grih Pravesh RSVP - Vir, Vishwa & Raj</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff8f0;
+      color: #5a3e2b;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #b57224;
+    }
+    form {
+      margin-top: 20px;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #d1a46c;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    button {
+      background-color: #b57224;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #8f561c;
+    }
+    footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #8b6b47;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>You're Invited! ✨</h1>
+    <p>Join us for the Grih Pravesh ceremony of <strong>Vir, Vishwa & Raj</strong>!</p>
+    <p><strong>Date:</strong> 30th April, 2025<br><strong>Time:</strong> 11:00 AM<br><strong>Venue:</strong> Unit no: 3265, Prestige Beverly Hills</p>
+    <form name="rsvp-form" method="POST" data-netlify="true">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <select name="attendance" required>
+        <option value="">Will you attend?</option>
+        <option value="Yes">Yes, I'll be there!</option>
+        <option value="No">Sorry, can't make it.</option>
+      </select>
+      <select name="guests">
+        <option value="">How many guests (including you)?</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4 or more</option>
+      </select>
+      <textarea name="message" rows="4" placeholder="Any comments or wishes?"></textarea>
+      <button type="submit">Submit RSVP</button>
+    </form>
+    <footer>
+      We can't wait to celebrate with you over a delicious Gujarati breakfast! 🍽️
+    </footer>
+  </div>
+</body>
+</html>
